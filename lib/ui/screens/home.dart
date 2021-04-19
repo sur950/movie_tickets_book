@@ -147,9 +147,17 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
               return SizedBox(height: translate);
             },
           ),
-          ClipRRect(
-            borderRadius: BorderRadius.circular(20),
-            child: Image(image: _res.image.image, width: _size.width / 2),
+          InkWell(
+            onTap: () => Navigator.push(
+              context,
+              PageRouteBuilder(
+                  pageBuilder: (ctx, a1, a2) =>
+                      Details(movie: _res, size: _size)),
+            ),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(20),
+              child: Image(image: _res.image.image, width: _size.width / 2),
+            ),
           ),
           SizedBox(height: _size.height * 0.02),
           AnimatedBuilder(
