@@ -36,7 +36,7 @@ class MoviesData {
       ],
     ),
     MovieResponse(
-      id: 2,
+      id: 1,
       name: AllConstants().movie2Name,
       rating: AllConstants().movie2Rating,
       genre: [AllConstants().action, AllConstants().adventure],
@@ -61,11 +61,15 @@ class MoviesData {
         MovieCastResponse(
           name: AllConstants().movie2Cast4Name,
           image: Image.asset(AllImagesAndVideos().movie2Cast4Image),
+        ),
+        MovieCastResponse(
+          name: AllConstants().movie2Cast5Name,
+          image: Image.asset(AllImagesAndVideos().movie2Cast5Image),
         )
       ],
     ),
     MovieResponse(
-      id: 3,
+      id: 2,
       name: AllConstants().movie3Name,
       rating: AllConstants().movie3Rating,
       genre: [AllConstants().action, AllConstants().adventure],
@@ -90,6 +94,35 @@ class MoviesData {
         MovieCastResponse(
           name: AllConstants().movie3Cast4Name,
           image: Image.asset(AllImagesAndVideos().movie3Cast4Image),
+        )
+      ],
+    ),
+    MovieResponse(
+      id: 3,
+      name: AllConstants().movie4Name,
+      rating: AllConstants().movie4Rating,
+      genre: [AllConstants().action, AllConstants().adventure],
+      storyLine: AllConstants().movie4StoryLine,
+      image: Image.asset(AllImagesAndVideos().movie4Poster),
+      imageText: Image.asset(AllImagesAndVideos().movie4Banner),
+      videoPath: AllImagesAndVideos().movie4Trailer,
+      videoReflectionPath: AllImagesAndVideos().movie4TrailerReflection,
+      castList: [
+        MovieCastResponse(
+          name: AllConstants().movie4Cast1Name,
+          image: Image.asset(AllImagesAndVideos().movie4Cast1Image),
+        ),
+        MovieCastResponse(
+          name: AllConstants().movie4Cast2Name,
+          image: Image.asset(AllImagesAndVideos().movie4Cast2Image),
+        ),
+        MovieCastResponse(
+          name: AllConstants().movie4Cast3Name,
+          image: Image.asset(AllImagesAndVideos().movie4Cast3Image),
+        ),
+        MovieCastResponse(
+          name: AllConstants().movie4Cast4Name,
+          image: Image.asset(AllImagesAndVideos().movie4Cast4Image),
         )
       ],
     ),

@@ -1,3 +1,6 @@
+// Dart default
+export 'dart:async';
+
 // flutter default
 export 'package:flutter/material.dart';
 export 'package:flutter/services.dart';
@@ -14,6 +17,7 @@ export 'package:movie_tickets_book/utils/data.dart';
 export 'package:movie_tickets_book/utils/images_videos.dart';
 export 'package:movie_tickets_book/utils/constants.dart';
 export 'package:movie_tickets_book/utils/enums.dart';
+export 'package:movie_tickets_book/ui/splash.dart';
 
 // External packages
 export 'package:scroll_snap_list/scroll_snap_list.dart';

@@ -207,10 +207,15 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
       margin: EdgeInsets.symmetric(horizontal: 32),
       child: Align(
         alignment: Alignment.topCenter,
-        child: FlatButton(
-          color: Theme.of(context).colorScheme.primary,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
+        child: TextButton(
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all(
+                Theme.of(context).colorScheme.primary),
+            shape: MaterialStateProperty.all(
+              RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+            ),
           ),
           onPressed: () => Navigator.push(
             context,

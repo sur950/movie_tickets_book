@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
         fontFamily: "Open-Sans",
       ),
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: Splash(),
     );
   }
 }

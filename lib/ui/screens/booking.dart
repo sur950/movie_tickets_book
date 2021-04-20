@@ -43,11 +43,11 @@ class _BookingState extends State<Booking> with TickerProviderStateMixin {
   // 3 is notavailable
   // 4 is yours
   List<List<int>> _chairStatus = [
-    [0, 3, 2, 1, 2, 2, 0],
-    [2, 2, 2, 2, 1, 2, 2],
-    [1, 1, 2, 2, 2, 2, 2],
-    [0, 2, 1, 1, 1, 2, 0],
-    [2, 2, 2, 2, 2, 2, 2],
+    [1, 3, 1, 3, 2, 3, 2],
+    [0, 1, 3, 1, 3, 2, 0],
+    [3, 2, 3, 2, 3, 2, 3],
+    [1, 3, 1, 3, 1, 3, 1],
+    [0, 2, 0, 2, 0, 2, 0],
     [0, 3, 3, 2, 1, 1, 0]
   ];
 
@@ -160,6 +160,8 @@ class _BookingState extends State<Booking> with TickerProviderStateMixin {
     _reflectionAc?.dispose();
     _payButtonAc?.dispose();
     _cinemaChairAc?.dispose();
+    widget?.playerController?.pause();
+    widget?.refPlayerController?.pause();
     super.dispose();
   }
 
@@ -419,8 +421,8 @@ class _BookingState extends State<Booking> with TickerProviderStateMixin {
           Container(
             padding: EdgeInsets.only(top: 18),
             child: Container(
-              width: MediaQuery.of(context).size.width * 0.8,
-              height: 800,
+              width: MediaQuery.of(context).size.width * 0.85,
+              height: MediaQuery.of(context).size.width * 0.8,
               child: Center(
                 child: widget.refPlayerController.value.initialized
                     ? AnimatedBuilder(
@@ -445,8 +447,8 @@ class _BookingState extends State<Booking> with TickerProviderStateMixin {
                 builder: (ctx, child) =>
                     Opacity(opacity: _reflectionTween.value, child: child),
                 child: Container(
-                  height: 40,
-                  width: MediaQuery.of(context).size.width * 0.8,
+                  height: MediaQuery.of(context).size.width * 0.8,
+                  width: MediaQuery.of(context).size.width * 0.85,
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
                       colors: [Colors.grey[300], Colors.transparent],
@@ -553,11 +555,16 @@ class _BookingState extends State<Booking> with TickerProviderStateMixin {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(left: 32, right: 32, bottom: 8),
-              child: FlatButton(
-                color: Theme.of(context).colorScheme.primary,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
+              margin: EdgeInsets.fromLTRB(32, 2, 32, 8),
+              child: TextButton(
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(
+                      Theme.of(context).colorScheme.primary),
+                  shape: MaterialStateProperty.all(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(7),
+                    ),
+                  ),
                 ),
                 onPressed: () {
                   Toast.show(
@@ -571,7 +578,7 @@ class _BookingState extends State<Booking> with TickerProviderStateMixin {
                 },
                 child: Container(
                   width: _size.width - 64,
-                  height: _size.height * .08,
+                  height: _size.height * .05,
                   child: Center(
                     child: Text(
                       'Pay',

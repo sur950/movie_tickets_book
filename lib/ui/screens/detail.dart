@@ -13,7 +13,6 @@ class _DetailsState extends State<Details> with TickerProviderStateMixin {
   Size get _size => MediaQuery.of(context).size;
   RubberAnimationController _rubberAnimationController;
   ScrollController _rubberScrollController;
-
   VideoPlayerController _movieController;
   VideoPlayerController _refPlayerController;
 
@@ -37,6 +36,15 @@ class _DetailsState extends State<Details> with TickerProviderStateMixin {
     _refPlayerController =
         VideoPlayerController.asset(widget.movie.videoReflectionPath)
           ..initialize();
+  }
+
+  @override
+  void dispose() {
+    _rubberScrollController?.dispose();
+    _rubberAnimationController?.dispose();
+    _movieController?.dispose();
+    _refPlayerController?.dispose();
+    super.dispose();
   }
 
   @override
@@ -150,7 +158,7 @@ class _DetailsState extends State<Details> with TickerProviderStateMixin {
       child: ListView.builder(
         padding: EdgeInsets.zero,
         scrollDirection: Axis.horizontal,
-        itemCount: 4,
+        itemCount: widget.movie.castList.length,
         itemBuilder: (ctx, index) {
           return Padding(
             padding: EdgeInsets.symmetric(horizontal: 10),
@@ -163,6 +171,8 @@ class _DetailsState extends State<Details> with TickerProviderStateMixin {
                     child: Image(
                       image: widget.movie.castList[index].image.image,
                       width: _size.width / 6,
+                      height: _size.height / 10,
+                      fit: BoxFit.cover,
                     ),
                   ),
                   SizedBox(height: 6),
@@ -188,10 +198,14 @@ class _DetailsState extends State<Details> with TickerProviderStateMixin {
         width: _size.width * 0.9,
         height: _size.height * 0.08,
         margin: EdgeInsets.symmetric(vertical: _size.width * 0.05),
-        child: FlatButton(
-          color: Colors.black,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
+        child: TextButton(
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all(Colors.black),
+            shape: MaterialStateProperty.all(
+              RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+            ),
           ),
           onPressed: () => Navigator.push(
             context,

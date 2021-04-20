@@ -14,14 +14,15 @@ class AllConstants {
   String movie1Cast4Name = "Selena Gomez";
 
   // Movie-2 details
-  double movie2Rating = 4.0;
-  String movie2Name = "Mulan";
+  double movie2Rating = 8.2;
+  String movie2Name = "Baahubali";
   String movie2StoryLine =
-      "Fearful that her ailing father will be drafted into the Chinese military, Mulan (Ming-Na Wen) takes his spot -- though, as a girl living under a patriarchal regime, she is technically unqualified to serve. She cleverly impersonates a man and goes off to train with fellow recruits. Accompanied by her dragon, Mushu (Eddie Murphy), she uses her smarts to help ward off a Hun invasion, falling in love with a dashing captain along the way.";
-  String movie2Cast1Name = "Liu Yifei";
-  String movie2Cast2Name = "Donnie Yen";
-  String movie2Cast3Name = "Jet Li";
-  String movie2Cast4Name = "Gong Li";
+      "When Bhallaladeva conspires against his brother to become the king of Mahishmati, he has him killed by Katappa and imprisons his wife. Years later, his brother's son returns to avenge his father's death.";
+  String movie2Cast1Name = "Rajamouli";
+  String movie2Cast2Name = "Prabhas";
+  String movie2Cast3Name = "Rana";
+  String movie2Cast4Name = "Anushka";
+  String movie2Cast5Name = "Tamannaah";
 
   // Movie-3 details
   double movie3Rating = 7.0;
@@ -32,6 +33,16 @@ class AllConstants {
   String movie3Cast2Name = "Florance Pugh";
   String movie3Cast3Name = "David Harbour";
   String movie3Cast4Name = "Rachel Weisz";
+
+  // Movie-4 details
+  double movie4Rating = 4.0;
+  String movie4Name = "Mulan";
+  String movie4StoryLine =
+      "Fearful that her ailing father will be drafted into the Chinese military, Mulan (Ming-Na Wen) takes his spot -- though, as a girl living under a patriarchal regime, she is technically unqualified to serve. She cleverly impersonates a man and goes off to train with fellow recruits. Accompanied by her dragon, Mushu (Eddie Murphy), she uses her smarts to help ward off a Hun invasion, falling in love with a dashing captain along the way.";
+  String movie4Cast1Name = "Liu Yifei";
+  String movie4Cast2Name = "Donnie Yen";
+  String movie4Cast3Name = "Jet Li";
+  String movie4Cast4Name = "Gong Li";
 
   // all genres
   String family = "Family";
