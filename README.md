@@ -25,14 +25,17 @@ Open source UI project with beautiful designs, animations & completely customiza
   <tr>
     <td align="center"><img src="https://github.com/Vardaan-Solutions/movie_tickets_book/blob/master/images/1.png?raw=true" width="240" height="480" /></td>
     <td align="center"><img src="https://github.com/Vardaan-Solutions/movie_tickets_book/blob/master/images/2.png?raw=true" width="240" height="480" /></td>
-    <td align="center"><img src="https://github.com/Vardaan-Solutions/movie_tickets_book/blob/master/images/3.png?raw=true" width="240" height="480" /></td>
   </tr>
   <tr>
+    <td align="center"><img src="https://github.com/Vardaan-Solutions/movie_tickets_book/blob/master/images/3.png?raw=true" width="240" height="480" /></td>
     <td align="center"><img src="https://github.com/Vardaan-Solutions/movie_tickets_book/blob/master/images/4.png?raw=true" width="240" height="480" /></td>
+  </tr>
+  <tr>
     <td align="center"><img src="https://github.com/Vardaan-Solutions/movie_tickets_book/blob/master/images/5.png?raw=true" width="240" height="480" /></td>
-    <td align="center">![grab-landing-page](https://github.com/Vardaan-Solutions/movie_tickets_book/blob/master/images/video.mp4)</td>
   </tr>
 </table>
+
+![grab-landing-page](https://github.com/Vardaan-Solutions/movie_tickets_book/blob/master/images/video.mp4)
 
 ## Notes
 
