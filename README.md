@@ -32,6 +32,8 @@ Open source UI project with beautiful designs, animations & completely customiza
   </tr>
   <tr>
     <td align="center"><img src="https://github.com/Vardaan-Solutions/movie_tickets_book/blob/master/images/5.png?raw=true" width="240" height="480" /></td>
+    <td><video width="240" height="480" muted autoplay loop><source src="https://github.com/Vardaan-Solutions/movie_tickets_book/blob/master/images/video.mp4?raw=true" type="video/mp4">
+    </video></td>
   </tr>
 </table>
 
