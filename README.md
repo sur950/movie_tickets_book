@@ -1,7 +1,7 @@
 # Movie-Ticketing-App
 
 <p align="center">
-  <img width="460"  src="https://github.com/Vardaan-Solutions/movie_tickets_book/blob/master/images/logo.png?raw=true">
+  <img width="400" src="https://github.com/Vardaan-Solutions/movie_tickets_book/blob/master/images/logo.png?raw=true">
 </p>
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/suresh950?locale.x=en_GB)
@@ -32,11 +32,9 @@ Open source UI project with beautiful designs, animations & completely customiza
   </tr>
   <tr>
     <td align="center"><img src="https://github.com/Vardaan-Solutions/movie_tickets_book/blob/master/images/5.png?raw=true" width="240" height="480" /></td>
-    <td></td>
+    <td align="center"><img src="https://github.com/Vardaan-Solutions/movie_tickets_book/blob/master/images/video.gif?raw=true" width="240" height="480" /></td>
   </tr>
 </table>
-
-![grab-landing-page](https://github.com/Vardaan-Solutions/movie_tickets_book/blob/master/images/video.gif)
 
 ## Notes
 
@@ -45,4 +43,4 @@ Open source UI project with beautiful designs, animations & completely customiza
 
 ## Our products
 
-<a href="https://vardaan.app/"><img src="https://github.com/sur950/any_link_preview/blob/master/demo_images/vardaan.png?raw=true" width="100px;" alt="Vardaan"/><br /><sub><b>Vardaan</b></sub></a>
+<div align="center"><a href="https://vardaan.app/"><img src="https://github.com/sur950/any_link_preview/blob/master/demo_images/vardaan.png?raw=true" width="100px;" alt="Vardaan"/><br /><sub><b>Vardaan</b></sub></a></div>
